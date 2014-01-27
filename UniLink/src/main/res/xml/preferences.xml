@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <PreferenceCategory
+                android:title="Application Settings">
+                <EditTextPreference
+                    android:dialogMessage="Enter your University code"
+                    android:dialogTitle="Institution Code"
+                    android:inputType="text"
+                    android:key="institution"
+                    android:singleLine="true"
+                    android:summary="Your University's Institution code"
+                    android:title="Institution code"/>
+                <EditTextPreference
+                    android:dialogMessage="Enter your Module code"
+                    android:dialogTitle="Module Code"
+                    android:inputType="text"
+                    android:key="module"
+                    android:singleLine="true"
+                    android:summary="Your Module code"
+                    android:title="Module code"/>
+                <EditTextPreference
+                    android:dialogMessage="Enter your finishing year"
+                    android:dialogTitle="Finishing Year"
+                    android:inputType="number"
+                    android:key="finishyear"
+                    android:singleLine="true"
+                    android:summary="Your Finishing year"
+                    android:title="Finishing year"/>
+                </PreferenceCategory>
+
+</PreferenceScreen>

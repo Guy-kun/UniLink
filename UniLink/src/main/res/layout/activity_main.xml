@@ -1,0 +1,36 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/drawer_layout"
+    android:background="#e5e5e5">
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:paddingTop="10dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list"
+        android:divider="@null"
+        ></ListView>
+        <LinearLayout android:id="@android:id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/emptytext"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="#bebebe"
+                android:textSize="26sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="No-one here yet!"
+            />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

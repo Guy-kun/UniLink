@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/bgselector"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:id="@+id/card_titlelayout"
+            android:layout_toLeftOf="@+id/card_avatar">
+
+            <io.moe.unilink.AutoResizeTextView
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7e7e7e"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="user"
+                android:fontFamily="sans-serif"
+                android:id="@+id/card_name"
+                android:layout_gravity="left|center_vertical" />
+
+            <io.moe.unilink.AutoResizeTextView
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+            android:layout_marginTop="-2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#cdcccd"
+                android:textSize="14sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="user"
+                android:fontFamily="sans-serif"
+                android:id="@+id/card_username"
+                android:layout_gravity="left|center_vertical" />
+
+
+        </LinearLayout>
+        <io.moe.unilink.AutoResizeTextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#bdbcbd"
+            android:textSize="14sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="witty tagline goes here"
+            android:fontFamily="sans-serif"
+            android:id="@+id/card_tagline"
+            android:layout_gravity="left|center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/card_avatar"
+            android:layout_below="@+id/card_titlelayout"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/card_avatar"
+            android:src="@drawable/no_avatar"
+            android:layout_gravity="right|center_vertical"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
